@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // Задание 9
+        let days = +prompt('Введите дни');
+        function containsOnlyLetters(str) {
+        return /^[a-zA-Zа-яА-Я]+$/.test(str);
+        }
+
+    // Преводим в года  
+        let years = days / 365;
+        if (containsOnlyLetters(days)){
+            alert('Введите ЧИСЛО!!!')
+        }
+        if (years >= 1){
+            document.write(years + ' Года <br>')
+        } else { 
+            document.write('Меньше года <br>')
+        }
+    // Переводи в месяцы 
+        let months = days / 31;
+        if (months >= 1){
+            document.writeln(months + ' Месяца <br>')
+        } else {
+            document.writeln('Меньше месяца <br>')
+        }
+    // Переводим в недели 
+        let weeks = days / 7;
+        if (weeks >= 1){ 
+            document.writeln(weeks + ' недели <br>')
+        } else {
+            document.writeln('Меньше недели <br>')
+        }
+    // Переводим в часы 
+        let hours = days * 24;
+        document.writeln(hours + ' Часов <br>')
+    // переводим в минуты 
+        let minute = days * 60;
+        document.writeln(minute + ' Минут <br>')
+    // Переводим в секунды 
+        let seconds = minute * 60;
+        document.writeln(seconds + ' Секунд <br>')
+    </script>
+</body>
+</html>

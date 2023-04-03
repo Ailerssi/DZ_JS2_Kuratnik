@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Задание 1
+        let name = prompt("Введите ваше имя:");
+        let age = prompt("Введите ваш возраст:");
+        let city = prompt("Введите ваш город проживания:");
+        let phone = prompt("Введите ваш телефон:");
+        let email = prompt("Введите ваш email:");
+        let company = prompt("Введите название компании, в которой вы работаете:");
+
+        console.log(`Меня зовут ${name}. Мне ${age} лет. Я проживаю в городе ${city} и работаю в компании ${company}. Мои контактные данные: ${phone}, ${email}.`);
+    // Задание 2
+        let currentYear = new Date().getFullYear();
+        let birthYear = currentYear - age;
+
+        console.log(`Меня зовут ${name}. Мне ${age} лет. Я родился в ${birthYear} году. Я проживаю в городе ${city} и работаю в компании ${company}. Мои контактные данные: ${phone}, ${email}.`);
+    </script>
+</body>
+</html>
